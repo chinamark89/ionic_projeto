@@ -1,0 +1,43 @@
+// Fundo personalizado do container da página
+.custom-background {
+  --background: #f4f5f8;
+}
+
+// Container centralizado com limite de largura para telas maiores
+.login-container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+// Estilização do Cartão Ionic
+.login-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+ion-card-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+// Ajustes nos itens de formulário
+.custom-item {
+  --background: transparent;
+  --padding-start: 0;
+  margin-bottom: 12px;
+}
+
+// Personalização do botão
+ion-button {
+  --border-radius: 8px;
+  font-weight: 600;
+  height: 48px;
+}
