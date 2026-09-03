@@ -15,8 +15,8 @@ import {
   IonInput,
   IonButton,
   IonList,
-  IonBadge,
-  IonLabel
+  IonLabel,
+  IonBadge
 } from '@ionic/angular/standalone';
 
 @Component({
@@ -40,8 +40,8 @@ import {
     IonInput,
     IonButton,
     IonList,
-    IonBadge,
-    IonLabel
+    IonLabel,
+    IonBadge
   ]
 })
 export class LoginPage implements OnInit {

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Cadastro de Usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="from-card">
+    <ion-card-header>
+      <ion-card-title> Criar nova conta</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item lines="full" class="custom-item">
+        <ion-input label="Nome" labelPlaceholder="stacked" type="nome"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full" class="custom-item">
+        <ion-input label="E-mail" labelPlaceholder="stacked" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="full" class="custom-item">
+        <ion-input label="Senha" labelPlaceholder="stacked" type="password"></ion-input>
+      </ion-item>
+
+
+      <div *ngIf="mensagemErro" class="ion-padding-vertical">
+        <ion-text color="danger">
+          {{mensagemErro}}
+        </ion-text>
+
+      </div>
+      <div *ngIf="mensagemSucesso" class="ion-padding-vertical">
+        <ion-text color="success">
+          {{mensagemSucesso}}
+        </ion-text>
+      </div>
+      <ion-button expland="block" color="primary" class="ion-margin-top" (click)="cadastrar() "></ion-button>
+      <ion-spinner *ngIf="carregando" name="crecent"></ion-spinner>
+      <span *ngIf="!carregando">Finalizar cadastrar</span>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>
