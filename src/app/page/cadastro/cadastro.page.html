@@ -1,45 +1,56 @@
+<!-- Cabeçalho Superior -->
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-title>Cadastro de Usuario</ion-title>
+    <ion-title>Cadastro de Usuário</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card class="from-card">
-    <ion-card-header>
-      <ion-card-title> Criar nova conta</ion-card-title>
-    </ion-card-header>
+<!-- Conteúdo Principal -->
+<ion-content class="ion-padding custom-background">
+  <div class="form-container">
+    
+    <ion-card class="form-card">
+      <ion-card-header>
+        <ion-card-title>Criar Nova Conta</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content>
+      <ion-card-content>
+        <!-- Campo Nome Completo -->
+        <ion-item lines="full" class="custom-item">
+          <ion-input label="Nome Completo" labelPlacement="stacked" type="text" [(ngModel)]="usuario.nome" placeholder="Digite seu nome"></ion-input>
+        </ion-item>
 
-      <ion-item lines="full" class="custom-item">
-        <ion-input label="Nome" labelPlaceholder="stacked" type="nome"></ion-input>
-      </ion-item>
+        <!-- Campo E-mail -->
+        <ion-item lines="full" class="custom-item">
+          <ion-input label="E-mail" labelPlacement="stacked" type="email" [(ngModel)]="usuario.email" placeholder="seu.email@exemplo.com"></ion-input>
+        </ion-item>
 
-      <ion-item lines="full" class="custom-item">
-        <ion-input label="E-mail" labelPlaceholder="stacked" type="email"></ion-input>
-      </ion-item>
+        <!-- Campo Senha -->
+        <ion-item lines="full" class="custom-item">
+          <ion-input label="Senha" labelPlacement="stacked" type="password" [(ngModel)]="usuario.senha" placeholder="Mínimo 6 caracteres"></ion-input>
+        </ion-item>
 
-      <ion-item lines="full" class="custom-item">
-        <ion-input label="Senha" labelPlaceholder="stacked" type="password"></ion-input>
-      </ion-item>
+        <!-- Mensagem de Erro (Exibida dinamicamente) -->
+        <div *ngIf="mensagemErro" class="ion-padding-vertical">
+          <ion-text color="danger">
+            <p class="feedback-msg">{{ mensagemErro }}</p>
+          </ion-text>
+        </div>
 
+        <!-- Mensagem de Sucesso (Exibida dinamicamente) -->
+        <div *ngIf="mensagemSucesso" class="ion-padding-vertical">
+          <ion-text color="success">
+            <p class="feedback-msg">{{ mensagemSucesso }}</p>
+          </ion-text>
+        </div>
 
-      <div *ngIf="mensagemErro" class="ion-padding-vertical">
-        <ion-text color="danger">
-          {{mensagemErro}}
-        </ion-text>
+        <!-- Botão de Envio com Estado de Loading -->
+        <ion-button expand="block" color="primary" class="ion-margin-top" (click)="cadastrar()" [disabled]="carregando">
+          <ion-spinner *ngIf="carregando" name="crescent"></ion-spinner>
+          <span *ngIf="!carregando">Finalizar Cadastro</span>
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
 
-      </div>
-      <div *ngIf="mensagemSucesso" class="ion-padding-vertical">
-        <ion-text color="success">
-          {{mensagemSucesso}}
-        </ion-text>
-      </div>
-      <ion-button expland="block" color="primary" class="ion-margin-top" (click)="cadastrar() "></ion-button>
-      <ion-spinner *ngIf="carregando" name="crecent"></ion-spinner>
-      <span *ngIf="!carregando">Finalizar cadastrar</span>
-    </ion-card-content>
-
-  </ion-card>
+  </div>
 </ion-content>

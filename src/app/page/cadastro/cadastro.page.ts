@@ -1,83 +1,89 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms'; // Obrigatório para o uso de [(ngModel)]
 import {
   IonContent,
   IonHeader,
   IonTitle,
   IonToolbar,
   IonCard,
-  IonCardContent,
   IonCardHeader,
   IonCardTitle,
+  IonCardContent,
   IonItem,
+  IonInput,
   IonButton,
   IonText,
-  IonSpinner,
-  IonInput
-} from '@ionic/angular/standalone'
-import{ FormsModule} from '@angular/forms'
-
+  IonSpinner
+} from '@ionic/angular/standalone';
 
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.page.html',
   styleUrls: ['./cadastro.page.scss'],
   standalone: true,
-imports: [
-  FormsModule,
-  IonContent,
-  CommonModule,
-  IonHeader,
-  IonTitle,
-  IonToolbar,
-  IonCard,
-  IonCardContent,
-  IonCardHeader,
-  IonCardTitle,
-  IonItem,
-  IonInput,
-  IonButton,
-  IonText,
-  IonSpinner
- ]
+  imports: [
+    CommonModule,
+    FormsModule, // Registrado para habilitar formulários reativos/bidirecionais
+    IonContent,
+    IonHeader,
+    IonTitle,
+    IonToolbar,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent,
+    IonItem,
+    IonInput,
+    IonButton,
+    IonText,
+    IonSpinner
+  ]
 })
-export class CadastroPage  implements OnInit {
- usuario = {
+export class CadastroPage implements OnInit {
+
+  // Objeto que armazena os dados digitados no formulário
+  usuario = {
     nome: '',
     email: '',
-    senha: '',
- };
+    senha: ''
+  };
 
-
- mensagemErro = ''
- mensagemSucesso = ''
- carregando = false
+  // Variáveis para controle de feedback visual
+  mensagemErro = '';
+  mensagemSucesso = '';
+  carregando = false;
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
+  // Função disparada ao clicar no botão de cadastro
   cadastrar() {
-    this.mensagemErro = ''
-    this.mensagemSucesso = ''
+    // Limpa mensagens anteriores
+    this.mensagemErro = '';
+    this.mensagemSucesso = '';
 
-
-    if (!this.usuario.nome || !this.usuario.email|| this.usuario.senha){
-      this.mensagemErro = 'Preencha todos os campos obrigatorios!!'
-     return
-    }
-    if(this.usuario.senha.length < 6){
-      this.mensagemErro = 'A senha deve ter pelo menos 6 caracteres!'
+    // Validação 1: Campos obrigatórios
+    if (!this.usuario.nome || !this.usuario.email || !this.usuario.senha) {
+      this.mensagemErro = 'Preencha todos os campos obrigatórios!';
+      return;
     }
 
+    // Validação 2: Tamanho mínimo da senha
+    if (this.usuario.senha.length < 6) {
+      this.mensagemErro = 'A senha deve ter pelo menos 6 caracteres!';
+      return;
+    }
 
-    this.carregando = true
+    // Ativa o estado de carregamento
+    this.carregando = true;
 
-    setTimeout( () => {
-      this.carregando = false
-      this.mensagemSucesso = 'Cadastro realizado com sucesso!'
-      console.log("Dados foram salvos no formulario", this.usuario)
-    }, 1500 )
+    // Simula uma requisição com atraso de 1.5 segundos
+    setTimeout(() => {
+      this.carregando = false;
+      this.mensagemSucesso = 'Cadastro realizado com sucesso!';
+      console.log('Dados do formulário salvos:', this.usuario);
+    }, 1500);
   }
-
 }
