@@ -1,0 +1,321 @@
+<ion-content [fullscreen]="true" class="shop-page">
+
+  <!-- HEADER -->
+  <div class="header">
+
+    <div class="top-bar">
+
+      <div class="brand">
+        <div class="brand-icon">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+        </div>
+
+        <div>
+          <strong>Markshopping</strong>
+          <span>Seu shopping online</span>
+        </div>
+      </div>
+
+      <ion-button fill="clear" class="cart-button">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span class="cart-badge">2</span>
+      </ion-button>
+
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-container">
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-input
+        placeholder="O que você está procurando?"
+        type="search">
+      </ion-input>
+      <ion-button fill="clear">
+        <ion-icon name="options-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+  </div>
+
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+
+    <!-- CATEGORIES -->
+    <div class="section-header">
+      <div>
+        <span class="section-label">EXCLUSIVO PARA VOCÊ</span>
+        <h2>Encontre o que precisa</h2>
+      </div>
+
+      <ion-button fill="clear">
+        Ver tudo
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="categories">
+
+      <div class="category">
+        <div class="category-icon blue">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+        </div>
+        <span>Celulares</span>
+      </div>
+
+      <div class="category">
+        <div class="category-icon purple">
+          <ion-icon name="laptop-outline"></ion-icon>
+        </div>
+        <span>Notebooks</span>
+      </div>
+
+      <div class="category">
+        <div class="category-icon orange">
+          <ion-icon name="headset-outline"></ion-icon>
+        </div>
+        <span>Acessórios</span>
+      </div>
+
+      <div class="category">
+        <div class="category-icon green">
+          <ion-icon name="watch-outline"></ion-icon>
+        </div>
+        <span>Smartwatch</span>
+      </div>
+
+    </div>
+
+
+    <!-- OFFERS -->
+    <div class="section-header offers-header">
+      <div>
+        <span class="section-label">OFERTAS ESPECIAIS</span>
+        <h2>Ofertas do dia 🔥</h2>
+      </div>
+
+      <ion-button fill="clear">
+        Ver tudo
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-button>
+    </div>
+
+
+    <!-- PRODUCTS -->
+    <div class="products">
+
+      <!-- PRODUCT 1 -->
+      <div class="product-card">
+
+        <div class="product-image">
+          <span class="discount">-20%</span>
+
+          <div class="image-background blue-bg">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+
+          <button class="favorite">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">SMARTPHONE</span>
+
+          <h3>Celular Pro Max</h3>
+
+          <p>Smartphone moderno</p>
+
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <strong>4.9</strong>
+            <span>(128)</span>
+          </div>
+
+          <div class="price-area">
+            <span class="old-price">R$ 1.249,90</span>
+            <strong>R$ 999,90</strong>
+          </div>
+
+          <ion-button expand="block" class="buy-button">
+            <ion-icon name="cart-outline" slot="start"></ion-icon>
+            Comprar agora
+          </ion-button>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 2 -->
+      <div class="product-card">
+
+        <div class="product-image">
+          <span class="discount">-15%</span>
+
+          <div class="image-background purple-bg">
+            <ion-icon name="laptop-outline"></ion-icon>
+          </div>
+
+          <button class="favorite">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">INFORMÁTICA</span>
+
+          <h3>Notebook Pro</h3>
+
+          <p>Notebook profissional</p>
+
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <strong>4.8</strong>
+            <span>(96)</span>
+          </div>
+
+          <div class="price-area">
+            <span class="old-price">R$ 2.899,90</span>
+            <strong>R$ 2.499,90</strong>
+          </div>
+
+          <ion-button expand="block" class="buy-button">
+            <ion-icon name="cart-outline" slot="start"></ion-icon>
+            Comprar agora
+          </ion-button>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 3 -->
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <span class="discount">-10%</span>
+
+          <div class="image-background orange-bg">
+            <ion-icon name="headset-outline"></ion-icon>
+          </div>
+
+          <button class="favorite">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">GAMER</span>
+
+          <h3>Headset Gamer</h3>
+
+          <p>Áudio imersivo</p>
+
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <strong>4.7</strong>
+            <span>(74)</span>
+          </div>
+
+          <div class="price-area">
+            <span class="old-price">R$ 219,90</span>
+            <strong>R$ 199,90</strong>
+          </div>
+
+          <ion-button expand="block" class="buy-button">
+            <ion-icon name="cart-outline" slot="start"></ion-icon>
+            Comprar agora
+          </ion-button>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRODUCT 4 -->
+      <div class="product-card">
+
+        <div class="product-image">
+
+          <span class="discount">-25%</span>
+
+          <div class="image-background green-bg">
+            <ion-icon name="watch-outline"></ion-icon>
+          </div>
+
+          <button class="favorite">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="product-info">
+
+          <span class="product-category">TECNOLOGIA</span>
+
+          <h3>Smartwatch Fit</h3>
+
+          <p>Relógio inteligente</p>
+
+          <div class="rating">
+            <ion-icon name="star"></ion-icon>
+            <strong>4.8</strong>
+            <span>(52)</span>
+          </div>
+
+          <div class="price-area">
+            <span class="old-price">R$ 399,90</span>
+            <strong>R$ 299,90</strong>
+          </div>
+
+          <ion-button expand="block" class="buy-button">
+            <ion-icon name="cart-outline" slot="start"></ion-icon>
+            Comprar agora
+          </ion-button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- BOTTOM NAVIGATION -->
+  <div class="bottom-menu">
+
+    <ion-button fill="clear" class="active">
+      <ion-icon name="home"></ion-icon>
+      <span>Início</span>
+    </ion-button>
+
+    <ion-button fill="clear">
+      <ion-icon name="search-outline"></ion-icon>
+      <span>Buscar</span>
+    </ion-button>
+
+    <ion-button fill="clear">
+      <ion-icon name="heart-outline"></ion-icon>
+      <span>Favoritos</span>
+    </ion-button>
+
+    <ion-button fill="clear">
+      <ion-icon name="cart-outline"></ion-icon>
+      <span>Carrinho</span>
+    </ion-button>
+
+    <ion-button fill="clear">
+      <ion-icon name="person-outline"></ion-icon>
+      <span>Conta</span>
+    </ion-button>
+
+  </div>
+
+</ion-content>

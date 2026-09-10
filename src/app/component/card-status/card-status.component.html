@@ -1,3 +1,13 @@
-<p>
-  card-status works!
-</p>
+<ion-card class="status-card">
+  <ion-card-header>
+    <div class = "header-row">
+      <ion-card-title>{{ titulo}}</ion-card-title>
+      <ion-badge>{{ status}}</ion-badge>
+    </div>
+  <ion-card-subtitle>{{ subtitulo }}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ng-content></ng-content>
+  </ion-card-content>
+</ion-card>
