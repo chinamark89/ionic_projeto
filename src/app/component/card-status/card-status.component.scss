@@ -1,0 +1,15 @@
+.status{
+    border-radius: 12 px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0 , 0.05);
+    margin: 12px 0;
+    
+    .hearder-row{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ion-card-title{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+}
