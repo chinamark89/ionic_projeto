@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-button slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-button>
+    <ion-title>Detalhes do item</ion-title>
+   </ion-toolbar> 
+</ion-header>
+
+
+<ion-content class="ion-padding">
+  <ion-card>
+   <ion-card-header>
+    <ion-card-title>Item selecionado</ion-card-title>
+   </ion-card-header> 
+   <ion-card-content>
+      <p>ID do registro: <strong>{{ itemId }}</strong></p>
+   </ion-card-content>
+  </ion-card>
+</ion-content>

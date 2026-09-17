@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'cadastro',
     loadComponent: () => import('./page/cadastro/cadastro.page').then(m => m.CadastroPage)
   },
+  {
+    path: 'detalhes/:id',
+    loadComponent: () => import('./page/detalhes/detalhes.page').then(m =>m.DetalhesPage)
+  }
 ];
 @NgModule({
   imports: [
