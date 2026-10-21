@@ -1,0 +1,25 @@
+.custom-background {
+  --background: #f8fafc;
+}
+
+.form-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.form-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-msg {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+ion-button {
+  --border-radius: 8px;
+  height: 48px;
+}

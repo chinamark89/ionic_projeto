@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Meu Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card *ngIf="usuario">
+    <ion-card-header>
+      <ion-card-title>{{ usuario.nome }}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="full">
+        <ion-label>
+          <h3>E-mail</h3>
+          <p>{{ usuario.email }}</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item lines="full">
+        <ion-label>
+          <h3>Perfil de Acesso</h3>
+          <p>{{ usuario.perfil }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Edição do Nome no padrão Ionic 7+ -->
+      <ion-item lines="full" class="ion-margin-top">
+        <ion-input label="Alterar Nome" labelPlacement="stacked" type="text" [(ngModel)]="novoNome"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" color="primary" class="ion-margin-top" (click)="salvarPerfil()">
+        Salvar Alterações
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

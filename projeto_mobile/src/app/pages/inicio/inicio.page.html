@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <!-- Botão que abre o menu lateral -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Painel Principal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Bem-vindo, {{ usuario?.nome || 'ao Sistema Mobile!' }}!</h2>
+  <p>Utilize as abas inferiores ou o menu lateral para navegar entre os módulos.</p>
+</ion-content>

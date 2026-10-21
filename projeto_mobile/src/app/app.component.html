@@ -1,0 +1,31 @@
+<ion-app>
+  <!-- Menu Lateral Deslizante -->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu Principal</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="ion-padding">
+      <ion-list lines="none">
+        <ion-item button routerLink="/tabs/inicio">
+          <ion-label>Início</ion-label>
+        </ion-item>
+        
+        <ion-item button routerLink="/tabs/perfil">
+          <ion-label>Meu Perfil</ion-label>
+        </ion-item>
+        
+        <ion-item button routerLink="/login">
+          <ion-label color="danger">Sair do App</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Área de Conteúdo Principal vinculada ao id main-content -->
+  <div class="ion-page" id="main-content">
+    <ion-router-outlet></ion-router-outlet>
+  </div>
+</ion-app>

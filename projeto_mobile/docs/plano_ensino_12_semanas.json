@@ -1,0 +1,288 @@
+{
+  "disciplina": {
+    "nome": "Desenvolvimento de Aplicativos Móveis",
+    "carga_horaria_total": "48 horas",
+    "professor": "Eduardo Lázaro Roesler de Oliveira",
+    "instituicao": "Universidade de Marília Eurípides - UNIVEM",
+    "ementa": "Estudo dos fundamentos do desenvolvimento de aplicativos móveis, abrangendo ecossistemas nativos, híbridos e multiplataforma. Desenvolvimento de interfaces gráficas, navegação entre telas, organização da arquitetura da aplicação, consumo de APIs REST e persistência local de dados. Aplicação prática dos conceitos por meio da construção de aplicações móveis utilizando Ionic com Angular, TypeScript e Capacitor.",
+    "objetivo_geral": "Capacitar os estudantes a planejar, desenvolver e avaliar aplicações móveis funcionais, aplicando conceitos de interface, navegação, arquitetura, integração com serviços externos e persistência local de dados.",
+    "objetivos_especificos": [
+      "Compreender o ecossistema de desenvolvimento mobile e suas principais abordagens.",
+      "Configurar o ambiente de desenvolvimento para criação de aplicativos móveis.",
+      "Construir interfaces gráficas responsivas e organizadas.",
+      "Implementar navegação entre telas e fluxos de interação.",
+      "Aplicar padrões de arquitetura e conceitos de gerenciamento de estado.",
+      "Integrar aplicações com APIs REST e tratar erros de comunicação.",
+      "Implementar mecanismos de persistência local de dados."
+    ],
+    "competencias_desenvolvidas": [
+      "Desenvolvimento de interfaces móveis.",
+      "Organização de aplicações em camadas.",
+      "Integração com serviços e APIs.",
+      "Gerenciamento de dados locais e remotos.",
+      "Aplicação de boas práticas em software mobile.",
+      "Resolução de problemas em aplicações móveis."
+    ],
+    "metodologia": [
+      "Aulas expositivas dialogadas.",
+      "Demonstrações práticas em laboratório.",
+      "Desenvolvimento incremental de aplicações.",
+      "Exercícios guiados com foco em prática.",
+      "Análise de casos reais de uso."
+    ],
+    "ferramentas_utilizadas": [
+      "Ionic Framework",
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "NPM",
+      "Ionic CLI",
+      "Angular CLI",
+      "Android Studio",
+      "VS Code",
+      "Emuladores Android",
+      "Dispositivos físicos",
+      "Capacitor",
+      "APIs REST",
+      "Ionic Storage",
+      "Capacitor Preferences",
+      "Bibliotecas de persistência local"
+    ],
+    "justificativas_estrategicas": {
+      "stack_web_to_mobile": "A escolha de Ionic + Capacitor permite desenvolver uma base unica de codigo para Android, iOS e Web, reduzindo custo de desenvolvimento e manutencao. Essa abordagem aumenta a velocidade de entrega sem abrir mao do acesso a recursos nativos do dispositivo.",
+      "typescript_em_vez_de_javascript": "TypeScript melhora a qualidade do codigo com tipagem estatica, detectando erros antes da execucao e facilitando refatoracoes. Em turmas iniciantes e intermediarias, isso acelera o aprendizado de boas praticas e reduz retrabalho.",
+      "angular_para_arquitetura": "Angular oferece estrutura robusta para projetos de medio e grande porte, com modularizacao, injecao de dependencia, servicos, roteamento e padroes consistentes. Isso favorece escalabilidade, manutencao e trabalho colaborativo.",
+      "divisao_apis_e_persistencia_em_duas_partes": "A divisao em duas etapas permite progressao pedagogica: primeiro fundamentos e depois aprofundamento com tratamento de erros, modelagem, recuperacao de dados e integracao entre camadas. Assim, os alunos consolidam base antes de lidar com cenarios reais mais complexos.",
+      "formacao_com_autonomia": "As escolhas tecnicas priorizam empregabilidade, velocidade de prototipacao e compreensao arquitetural, permitindo que os alunos entendam nao apenas como implementar, mas quando e por que decidir cada abordagem."
+    },
+    "avaliacao": {
+      "descricao": "A avaliação será realizada por meio da participação nas atividades práticas, desenvolvimento das soluções propostas, compreensão dos conceitos trabalhados e entregas das implementações aplicadas. O foco será a evolução contínua ao longo das aulas, considerando o encadeamento entre teoria e prática.",
+      "criterios": [
+        "Participação e engajamento nas atividades propostas.",
+        "Qualidade técnica das implementações realizadas.",
+        "Capacidade de integrar funcionalidades na aplicação.",
+        "Organização e clareza do código produzido.",
+        "Justificativa das decisões técnicas adotadas nas implementações."
+      ]
+    },
+    "conteudos": [
+      {
+        "aula": 1,
+        "titulo": "Introdução ao Desenvolvimento Mobile",
+        "carga_horaria": "4 horas",
+        "objetivo": "Apresentar o ecossistema de desenvolvimento de aplicativos móveis e suas principais abordagens.",
+        "conteudos": [
+          "Diferenças entre aplicações nativas, híbridas e multiplataforma.",
+          "Plataformas Android e iOS.",
+          "Ferramentas utilizadas no desenvolvimento mobile.",
+          "Ciclo de vida de um aplicativo.",
+          "Panorama do mercado de aplicações móveis."
+        ],
+        "atividade_pratica": "Discussão de exemplos de aplicativos e identificação das abordagens de desenvolvimento mais adequadas.",
+        "resultado_esperado": "Compreender o cenário do desenvolvimento mobile e suas principais possibilidades.",
+        "de_onde_viemos": "Partimos do ponto zero da disciplina, alinhando conceitos-base e expectativas de aprendizagem.",
+        "justificativa_tecnica": "Nivelar conceitos entre nativo, hibrido e multiplataforma cria criterio para escolha consciente de stack e evita decisoes por modismo.",
+        "justificativa_mercadologica": "Entender cenarios e trade-offs de mobile aumenta a capacidade de dialogar com empresas que operam com diferentes estrategias de produto."
+      },
+      {
+        "aula": 2,
+        "titulo": "Configuração do Ambiente",
+        "carga_horaria": "4 horas",
+        "objetivo": "Configurar o ambiente necessário para iniciar o desenvolvimento de aplicativos móveis com Ionic e Angular.",
+        "conteudos": [
+          "Instalação do Node.js e NPM.",
+          "Instalação do Ionic CLI e Angular CLI.",
+          "Configuração do Android Studio e do VS Code.",
+          "Uso de emuladores e dispositivos físicos.",
+          "Estrutura inicial de um projeto Ionic com Angular.",
+          "Execução da primeira aplicação."
+        ],
+        "atividade_pratica": "Criação do primeiro projeto Ionic com Angular e execução em emulador ou dispositivo físico.",
+        "resultado_esperado": "Preparar o ambiente para desenvolver aplicações móveis com Ionic e Angular.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Introdução ao Desenvolvimento Mobile', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "O setup com Node, Ionic CLI e Angular CLI garante um fluxo padrao de desenvolvimento, build e testes desde o inicio da disciplina.",
+        "justificativa_mercadologica": "Profissionais que configuram ambiente com autonomia entregam mais rapido e reduzem dependencia de suporte tecnico no dia a dia."
+      },
+      {
+        "aula": 3,
+        "titulo": "Interfaces Gráficas - Parte 1",
+        "carga_horaria": "4 horas",
+        "objetivo": "Apresentar a construção de interfaces utilizando componentes do Ionic e templates do Angular.",
+        "conteudos": [
+          "Componentes básicos e avançados do Ionic.",
+          "Organização de componentes visuais.",
+          "Uso de temas.",
+          "Estrutura de páginas e templates.",
+          "Noções de UX/UI."
+        ],
+        "atividade_pratica": "Criação de uma tela com componentes básicos de interface no Ionic.",
+        "resultado_esperado": "Construir interfaces simples e organizadas para aplicações móveis.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Configuração do Ambiente', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Componentes do Ionic e templates Angular aceleram construcao de interfaces consistentes, reaproveitaveis e alinhadas a boas praticas de UX.",
+        "justificativa_mercadologica": "Times valorizam devs capazes de transformar requisitos de tela em interfaces funcionais com velocidade e padrao visual."
+      },
+      {
+        "aula": 4,
+        "titulo": "Interfaces Gráficas - Parte 2",
+        "carga_horaria": "4 horas",
+        "objetivo": "Trabalhar layouts responsivos e formulários em aplicações móveis.",
+        "conteudos": [
+          "Layouts responsivos.",
+          "Gerenciamento de componentes visuais.",
+          "Formulários.",
+          "Validação de dados.",
+          "Ajustes de interface para diferentes tamanhos de tela."
+        ],
+        "atividade_pratica": "Implementação de um formulário com validação e layout responsivo.",
+        "resultado_esperado": "Criar interfaces adaptáveis e com interação adequada ao usuário.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Interfaces Gráficas - Parte 1', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Formularios e validacao sao pontos centrais em apps reais e exigem dominio de componentes, estado de entrada e feedback ao usuario.",
+        "justificativa_mercadologica": "Experiencias com cadastro, login e coleta de dados impactam conversao e satisfacao do usuario final."
+      },
+      {
+        "aula": 5,
+        "titulo": "Interfaces Gráficas - Parte 3",
+        "carga_horaria": "4 horas",
+        "objetivo": "Aprimorar a construção de interfaces com foco em experiência do usuário e composição visual.",
+        "conteudos": [
+          "Componentes reutilizáveis.",
+          "Organização visual de telas.",
+          "Ajustes finos de responsividade.",
+          "Consistência visual.",
+          "Refinamento de UX/UI."
+        ],
+        "atividade_pratica": "Evolução de uma interface criada anteriormente com foco em consistência e usabilidade.",
+        "resultado_esperado": "Produzir interfaces mais refinadas, organizadas e responsivas.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Interfaces Gráficas - Parte 2', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Refino de composicao visual e reutilizacao de componentes reduz duplicacao e melhora manutencao do front-end mobile.",
+        "justificativa_mercadologica": "Apps com design consistente geram maior confianca do usuario e percepcao de qualidade do produto."
+      },
+      {
+        "aula": 6,
+        "titulo": "Navegação entre Telas - Parte 1",
+        "carga_horaria": "4 horas",
+        "objetivo": "Implementar os fundamentos da navegação entre telas em aplicações móveis.",
+        "conteudos": [
+          "Rotas entre telas.",
+          "Passagem de parâmetros.",
+          "Estrutura básica de navegação.",
+          "Fluxo de telas.",
+          "Boas práticas de organização da navegação."
+        ],
+        "atividade_pratica": "Criação de navegação básica entre duas ou mais telas.",
+        "resultado_esperado": "Compreender o funcionamento inicial da navegação em aplicativos móveis.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Interfaces Gráficas - Parte 3', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Navegacao com rotas e parametros estrutura o fluxo entre paginas e prepara terreno para modulos mais complexos.",
+        "justificativa_mercadologica": "Fluxos de navegacao claros diminuem abandono e melhoram eficiencia de uso em apps de servico e comercio."
+      },
+      {
+        "aula": 7,
+        "titulo": "Navegação entre Telas - Parte 2",
+        "carga_horaria": "4 horas",
+        "objetivo": "Aprimorar os padrões de navegação e a experiência de uso da aplicação.",
+        "conteudos": [
+          "Menus laterais.",
+          "Navegação inferior.",
+          "Abas.",
+          "Organização de fluxos complexos.",
+          "Usabilidade na navegação."
+        ],
+        "atividade_pratica": "Ampliação da aplicação com navegação estruturada por menus e abas.",
+        "resultado_esperado": "Organizar a navegação da aplicação de forma intuitiva e funcional.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Navegação entre Telas - Parte 1', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Menus, tabs e padroes de navegacao compostos sao comuns em apps reais e exigem organizacao de rotas por contexto funcional.",
+        "justificativa_mercadologica": "Dominar padroes de navegacao acelera onboarding em projetos corporativos que possuem multiplos modulos e perfis de usuario."
+      },
+      {
+        "aula": 8,
+        "titulo": "Arquitetura da Aplicação",
+        "carga_horaria": "4 horas",
+        "objetivo": "Apresentar a organização estrutural da aplicação e os principais padrões arquiteturais no ecossistema Angular.",
+        "conteudos": [
+          "Estrutura do projeto Ionic/Angular.",
+          "Separação de responsabilidades (páginas, componentes e serviços).",
+          "Arquitetura baseada em componentes.",
+          "Gerenciamento de estado e fluxo de dados com RxJS.",
+          "Boas práticas de manutenção e escalabilidade."
+        ],
+        "atividade_pratica": "Organização de um projeto seguindo uma estrutura arquitetural definida com componentes e serviços.",
+        "resultado_esperado": "Compreender como estruturar aplicações móveis de forma sustentável.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Navegação entre Telas - Parte 2', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Angular favorece separacao por paginas, componentes e servicos, criando base sustentavel para escala, testes e manutencao.",
+        "justificativa_mercadologica": "Arquitetura bem definida reduz custo de evolucao e aumenta previsibilidade de entregas em squads de produto."
+      },
+      {
+        "aula": 9,
+        "titulo": "Consumo de APIs REST e Tratamento de Erros - Parte 1",
+        "carga_horaria": "4 horas",
+        "objetivo": "Introduzir a integração da aplicação com serviços externos por meio de APIs REST.",
+        "conteudos": [
+          "Requisições HTTP.",
+          "APIs REST.",
+          "Manipulação de JSON.",
+          "Estrutura de respostas.",
+          "Fundamentos do consumo de serviços externos."
+        ],
+        "atividade_pratica": "Realização de requisições para uma API pública e leitura de dados retornados.",
+        "resultado_esperado": "Compreender os fundamentos do consumo de APIs em aplicativos móveis.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Arquitetura da Aplicação', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "A primeira parte de APIs prioriza fundamentos de HTTP e JSON para garantir leitura correta de contratos antes de tratar cenarios avancados.",
+        "justificativa_mercadologica": "Integracao com APIs e habilidade basica obrigatoria em vagas de mobile moderno conectadas a servicos em nuvem."
+      },
+      {
+        "aula": 10,
+        "titulo": "Consumo de APIs REST e Tratamento de Erros - Parte 2",
+        "carga_horaria": "4 horas",
+        "objetivo": "Aprofundar o tratamento de falhas e a validação de respostas externas.",
+        "conteudos": [
+          "Consumo de dados em tempo real.",
+          "Tratamento de exceções.",
+          "Validação de respostas.",
+          "Fallbacks para erros.",
+          "Boas práticas de comunicação entre cliente e servidor."
+        ],
+        "atividade_pratica": "Implementação de tratamento de erros em uma integração com API.",
+        "resultado_esperado": "Consumir serviços externos de forma segura e confiável.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Consumo de APIs REST e Tratamento de Erros - Parte 1', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "A segunda parte aprofunda resiliencia com tratamento de erros, validacao e fallback, essenciais para confiabilidade em redes instaveis.",
+        "justificativa_mercadologica": "Produtos com boa tolerancia a falhas preservam experiencia do usuario e reduzem impactos de indisponibilidade de backend."
+      },
+      {
+        "aula": 11,
+        "titulo": "Persistência Local - Parte 1",
+        "carga_horaria": "4 horas",
+        "objetivo": "Apresentar mecanismos simples de armazenamento local de dados em aplicações Ionic/Angular.",
+        "conteudos": [
+          "Capacitor Preferences e localStorage.",
+          "Armazenamento de configurações.",
+          "Preferências do usuário.",
+          "Leitura e escrita local.",
+          "Persistência simples."
+        ],
+        "atividade_pratica": "Criação de funcionalidade para salvar preferências do usuário no dispositivo.",
+        "resultado_esperado": "Persistir informações simples no dispositivo de forma adequada.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Consumo de APIs REST e Tratamento de Erros - Parte 2', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Comecar por Preferences e localStorage permite compreender persistencia de baixo risco antes de adotar camadas mais robustas.",
+        "justificativa_mercadologica": "Muitas aplicacoes usam configuracoes locais para personalizacao e continuidade de uso, mesmo sem autenticacao completa."
+      },
+      {
+        "aula": 12,
+        "titulo": "Persistência Local - Parte 2",
+        "carga_horaria": "4 horas",
+        "objetivo": "Aprofundar o armazenamento local com estruturas mais robustas.",
+        "conteudos": [
+          "Ionic Storage.",
+          "SQLite (quando aplicável).",
+          "Modelagem de dados locais.",
+          "Recuperação de informações persistidas.",
+          "Boas práticas de armazenamento local."
+        ],
+        "atividade_pratica": "Implementação de uma pequena base local para armazenamento de dados da aplicação.",
+        "resultado_esperado": "Persistir e recuperar dados locais com maior flexibilidade.",
+        "de_onde_viemos": "Retomamos os aprendizados de 'Persistência Local - Parte 1', consolidando os fundamentos necessários para avançar com segurança.",
+        "justificativa_tecnica": "Ionic Storage e modelagem local ampliam capacidade de guardar dados estruturados e preparar cenarios offline-first.",
+        "justificativa_mercadologica": "Persistencia local adequada melhora desempenho percebido e reduz dependencia continua de rede em apps de campo."
+      }
+    ]
+  }
+}
