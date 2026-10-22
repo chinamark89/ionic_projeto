@@ -1,18 +1,25 @@
-// Importação dos módulos principais
 const express = require('express');
 const cors = require('cors');
 
-// Inicializa a aplicação Express
 const app = express();
-
-// Middlewares globais: liberação de acesso (CORS) e leitura de JSON no corpo das requisições
 app.use(cors());
 app.use(express.json());
 
-// Rota de verificação de saúde da API (Health Check)
+// Dados simulados de produtos
+const produtos = [
+  { id: 1, nome: 'Smartphone Android', preco: 1500.00, categoria: 'Eletrônicos' },
+  { id: 2, nome: 'Fone de Ouvido Bluetooth', preco: 250.00, categoria: 'Acessórios' },
+  { id: 3, nome: 'Carregador Rápido USB-C', preco: 120.00, categoria: 'Acessórios' }
+];
+
+// Rota de Health Check
 app.get('/health', (_req, res) => {
   res.status(200).json({ status: 'ok' });
 });
 
-// Exporta a instância do app
+// Nova rota GET /produtos
+app.get('/produtos', (_req, res) => {
+  res.status(200).json(produtos);
+});
+
 module.exports = app;

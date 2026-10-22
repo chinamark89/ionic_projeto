@@ -19,6 +19,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/detalhes/detalhes.page').then( m => m.DetalhesPage)
   },
   {
+  path: 'produtos',
+  loadComponent: () => import('./pages/produtos/produtos.page').then(m => m.ProdutosPage)
+},
+  {
     path: 'tabs',
     loadComponent: () => import('./pages/tabs/tabs.page').then( m => m.TabsPage),
     // Declaração de rotas filhas sob a casca do 'tabs'

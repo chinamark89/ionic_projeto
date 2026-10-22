@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Catálogo de Produtos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Spinner exibido enquanto aguarda a API -->
+  <div *ngIf="carregando" class="ion-text-center ion-padding">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Carregando produtos da API...</p>
+  </div>
+
+  <!-- Lista dinâmica de produtos retornados da API Node -->
+  <ion-list *ngIf="!carregando">
+    <ion-item *ngFor="let item of produtos">
+      <ion-label>
+        <h2>{{ item.nome }}</h2>
+        <p>Categoria: {{ item.categoria }}</p>
+      </ion-label>
+      <ion-badge slot="end" color="success">R$ {{ item.preco.toFixed(2) }}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
